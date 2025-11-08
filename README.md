@@ -24,7 +24,7 @@ O portfolio contém as seguintes seções:
   - Ferramentas e Plataformas
 - **Formação**: Educação acadêmica e certificações
   - Formação em andamento
-  - 5 cursos e certificações
+  - 6 cursos e certificações
 - **Redes Sociais**: Links para GitHub, LinkedIn e Email
 
 ## 🎨 Features
