@@ -554,12 +554,13 @@
                                 <div class="project-card group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 rounded-lg p-4 -mx-4">
                                     <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                                     <div class="z-10 sm:col-span-2">
-                                        <div class="w-full h-32 bg-slate-800 rounded-lg border-2 border-slate-700 flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-teal-300">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            </svg>
-                                        </div>
+                                        <img
+                                            src="https://i.imgur.com/Ds9c32w.png"
+                                            alt="Screenshot das Automações para Tratativas do Ponto"
+                                            class="clickable-image w-full rounded-lg border-2 border-slate-700 object-cover transition-all duration-300 group-hover:border-teal-400/50 relative z-20"
+                                            loading="lazy"
+                                            onclick="openImageModal(this.src)"
+                                        />
                                     </div>
                                     <div class="z-10 sm:col-span-6">
                                         <h3 class="font-medium leading-snug text-slate-200">
@@ -579,6 +580,23 @@
                                             <li>Envio em massa de alteração de folgas e horários no sistema de otimização</li>
                                             <li>Obtenção e inclusão de afastamentos em massa no sistema</li>
                                         </ul>
+
+                                        <!-- Gallery thumbnails -->
+                                        <div class="mt-3 flex gap-2 relative z-20">
+                                            <div class="clickable-image w-16 h-16 rounded border-2 border-slate-700 overflow-hidden hover:border-teal-400/50 transition-all" onclick="openImageModal('https://i.imgur.com/Ds9c32w.png')">
+                                                <img src="https://i.imgur.com/Ds9c32w.png" alt="Screenshot 1" class="w-full h-full object-cover" loading="lazy" />
+                                            </div>
+                                            <div class="clickable-image w-16 h-16 rounded border-2 border-slate-700 overflow-hidden hover:border-teal-400/50 transition-all" onclick="openImageModal('https://i.imgur.com/iL3RkPJ.png')">
+                                                <img src="https://i.imgur.com/iL3RkPJ.png" alt="Screenshot 2" class="w-full h-full object-cover" loading="lazy" />
+                                            </div>
+                                            <div class="clickable-image w-16 h-16 rounded border-2 border-slate-700 overflow-hidden hover:border-teal-400/50 transition-all" onclick="openImageModal('https://i.imgur.com/1yBB7m1.png')">
+                                                <img src="https://i.imgur.com/1yBB7m1.png" alt="Screenshot 3" class="w-full h-full object-cover" loading="lazy" />
+                                            </div>
+                                            <div class="clickable-image w-16 h-16 rounded border-2 border-slate-700 overflow-hidden hover:border-teal-400/50 transition-all" onclick="openImageModal('https://i.imgur.com/TfiVcSM.png')">
+                                                <img src="https://i.imgur.com/TfiVcSM.png" alt="Screenshot 4" class="w-full h-full object-cover" loading="lazy" />
+                                            </div>
+                                        </div>
+
                                         <ul class="mt-2 flex flex-wrap" aria-label="Tecnologias utilizadas">
                                             <li class="mr-1.5 mt-2">
                                                 <div class="tech-badge flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Python</div>
