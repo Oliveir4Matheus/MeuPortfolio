@@ -822,22 +822,35 @@
 
         // Image Modal functions (global scope for onclick attributes)
         function openImageModal(imageSrc) {
+            console.log('openImageModal called with:', imageSrc);
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImage');
+            console.log('modal element:', modal);
+            console.log('modalImg element:', modalImg);
+
             if (modal && modalImg) {
                 modal.classList.add('active');
                 modalImg.src = imageSrc;
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                document.body.style.overflow = 'hidden';
+                console.log('Modal opened successfully');
+            } else {
+                console.error('Modal elements not found!');
             }
         }
 
         function closeImageModal() {
+            console.log('closeImageModal called');
             const modal = document.getElementById('imageModal');
             if (modal) {
                 modal.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
+                document.body.style.overflow = '';
+                console.log('Modal closed successfully');
             }
         }
+
+        // Make functions globally accessible
+        window.openImageModal = openImageModal;
+        window.closeImageModal = closeImageModal;
     </script>
 
 </body>
